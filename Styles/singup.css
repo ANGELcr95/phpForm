@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+/* esto es para resetear todo la pagina  */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    scroll-behavior:smooth ;
+    user-select: none;
+    font-family:'Itim';
+    text-decoration: none;  
+} 
+ 
+header {
+    position: relative;
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.banner {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.banner img{
+    width: 100vw;
+    height: 100vh;
+}
+header .contenedor{
+    justify-content: center; 
+    width: 330px;
+    display: block;
+    margin: auto;
+    z-index: 100;
+}
+header .contenedor h1{
+    color:white;
+    font-size: 50px;
+    margin-left:60px;
+}
+header .contenedor .message{
+    text-align: center;
+    margin-left:65px;
+    color:white;
+    width: 40%;
+}
+
+header .contenedor span {
+    margin-left:90px;
+}
+
+header .contenedor .general{
+    display:flex;
+}
+
+header .contenedor .general .alterno {
+    margin-bottom: 10px;
+    display:block;
+}
+header .contenedor .general .alterno .formulario__input {
+    opacity:0.4;
+    border-radius: 5px;
+    width: 270px;
+    line-height: 40px;
+    font-size: 20px;
+    color: black;
+    background-color: rgba(255, 235, 205, 0.5);
+}
+
+::placeholder { 
+    color:black;
+    opacity: 1;
+}
+
+header .contenedor .general .alterno input:focus{
+    background-color: gray;
+    color:black;
+    line-height: 40px;
+    font-size: 25px;
+    opacity: 0.5;
+}
+header .contenedor #into{
+    margin-top: 15px;
+    width: 100px;
+    font-size: 20px;
+    line-height: 35px;
+    background: gray;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    border: white;
+    opacity: 0.8;
+    margin-left:80px;
+}
+a{
+    color: white;
+}
+h2{
+    color: black;
+}
+header .contenedor #into:hover{
+    width: 110px;
+    background: rgba(199, 199, 199, 0.822);
+    transition: all 0.5s;
+}
+
+.formulario__grupo{
+    justify-content: center;
+    align-items: center;
+}
+
+#eye {
+    width: 20px;
+    max-height: 20px;
+    cursor: pointer;
+}
+#usuario{
+    margin-left: 0%;
+    
+}
+#eye2 {
+    width: 20px;
+    max-height: 20px;
+    cursor: pointer;
+
+} 
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+    color:antiquewhite;
+    width: 80%;
+    text-align: center;
+}
+
+.formulario__input-error-activo {
+	display: block;
+   
+}
+#condiciones{
+    display: inline-flex;
+    margin: 15px 0px 0px 40px;
+}
+
+/* esta propiedad mueve esconde al x  */
+.formulario__validacion-estado {
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+ /* estilos para verificacion de los inputs  */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__label {
+	color:#bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color:#bb2929;
+	opacity:1;
+}
+ 
+.formulario__grupo-incorrecto input {
+	border: 3px solid rgba(207, 3, 3, 0.747);
+    opacity: 1;
+} 
+
+
+
